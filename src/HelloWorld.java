@@ -14,6 +14,7 @@ public class HelloWorld {
 		if(soda1.getName() != "BigRed") {
 			System.out.println("fail");
 		} 
+		
 		soda1.setPrice(1);
 		soda1.setHealthRating(2);
 		soda1.setType("soda");
@@ -28,11 +29,12 @@ public class HelloWorld {
 		sodas.add(soda2);
 		sodas.add(soda3);
 
-		for (Soda soda : sodas) {
-			System.out.println(soda.getName());
-			System.out.println(soda.getHealthRating());
-			System.out.println(soda.getType());
-		}
+
 		soda1.drink();
+			
+			
+		}
+		
+	
 	}
-}
+
