@@ -1,40 +1,53 @@
-import java.util.ArrayList;
+import java.util.Scanner;
 
 public class HelloWorld {
 
 	public static void main(String[] args) {
-
-		ArrayList<Soda> sodas = new ArrayList<>();
-
-		Soda soda1 = new Soda();
-		Soda soda2 = new Soda();
-		Soda soda3 = new Soda();
-
-		soda1.setName("BigRed");
-		if(soda1.getName() != "BigRed") {
-			System.out.println("fail");
-		} 
 		
-		soda1.setPrice(1);
-		soda1.setHealthRating(2);
-		soda1.setType("soda");
-
-		soda2.setName("Mountain Dew");
-		soda2.setPrice(2);
-
-		soda3.setName("Coke");
-		soda3.setPrice(3);
-
-		sodas.add(soda1);
-		sodas.add(soda2);
-		sodas.add(soda3);
-
-
-		soda1.drink();
-			
-			
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("hello");
+		int i = 5;
+		while(i <= 15) {
+			System.out.println(i);
+			i++;
 		}
 		
+		int guess = 0;
+	do {
+		System.out.println("Guess the number");
+		guess = scanner.nextInt();
+	} while(5 != guess);
+	System.out.println("Good Guess!!");
 	
+	
+	String[] pets = {"Diesel", "Cat", "Fraulein"};
+	int index = 0;
+	while(index < pets.length) {
+		System.out.println(pets[index]);
+		index++;
 	}
-
+	
+	int t = 2;
+	while(t <= 8) {
+		System.out.print(t + ", ");
+		t += 2;
+	}
+	System.out.println("Who do we appreciate");
+	
+	for (int m = 2; m <= 8; m += 2 ) {
+		System.out.print(m + ", ");
+	}
+	System.out.print("Who do we appreciate too");
+	System.out.println();
+	
+	for(int x = 1; x <= 10; x++) {
+		for (int y = 1; y <= 10; y++) {
+			System.out.printf("%4d", x * y);
+		}
+		System.out.println();
+	}
+}
+	
+	
+}
